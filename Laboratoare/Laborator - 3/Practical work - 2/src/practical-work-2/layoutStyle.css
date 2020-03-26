@@ -1,0 +1,124 @@
+/****************************************************
+ *  Push Button
+ *****************************************************/
+.push_button{
+    position:relative;
+    width:200px;
+    color:#FFF;
+    display:block;
+    text-decoration:none;
+    margin:0 auto;
+    border-radius:5px;
+    border:solid 1px #D94E3B;
+    background:#cb3b27;
+    text-align:center;
+    padding:20px 30px;
+
+    -webkit-transition: all 0.1s;
+    -moz-transition: all 0.1s;
+    transition: all 0.1s;
+
+/*    -webkit-box-shadow: 0px 9px 0px #84261a;
+    -moz-box-shadow: 0px 9px 0px #84261a;*/
+    box-shadow: 0px 9px 0px #84261a;
+}
+
+.push_button:active{
+/*    -webkit-box-shadow: 0px 2px 0px #84261a;
+    -moz-box-shadow: 0px 2px 0px #84261a;*/
+    box-shadow: 0px 2px 0px #84261a;
+    position:relative;
+    top:7px;
+}
+
+
+.button {
+    /*color: #333;*/
+    /*box-shadow: -3px 3px orange, -2px 2px orange, -1px 1px orange;*/
+    /*border: 1px solid orange;*/
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+.button:hover {
+  background-color: #3e8e41;
+  }
+
+.button:active {
+  background-color: #8e1421;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+.column {
+  float: left;
+  width: 10%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.position{
+  position: relative;
+  left: 40px;
+  right: 100px;
+  top: 10px;
+  width: 100px;
+  height: 50px;
+
+}
+
+img {
+  border: 1px solid #ddd; /* Gray border */
+  border-radius: 1px;  /* Rounded border */
+  padding: 2px; /* Some padding */
+  width: 40px; /* Set a small width */
+}
+
+.image{
+  border-radius: 1px;  /* Rounded border */
+  padding: 2px; /* Some padding */
+  width: 40px; /* Set a small width */
+}
+
+.image.relative{
+  display: none;
+}
+
+.image:hover .relative{
+  display: compact;
+  position: absolute;
+  left: 40px;
+  right: 100px;
+  top: 10px;
+  width: 100px;
+  height: 50px;
+}
+
+
+
